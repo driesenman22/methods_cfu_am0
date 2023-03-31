@@ -8,18 +8,29 @@
 # The return value is "hello world"
 "Hello World".downcase
 
-
+# The include method calls on the string object "Hello World". The Include method asks whether or not
+# the string in question includes the word "Hello" defined after the .include method.
+# The return value is true because Hello World does indeed include the word "Hello".
 "Hello World".include?("Hello")
 
+# The end with method calls on the string object "Hello World". The end with method asks whether or not
+# The string variable in question "Hello World" ends with "Hello" Because it does not, we get 
+# a return value of false. 
 
 "Hello World".end_with?("Hello")
 
+# The end with method calls on the string object "Hello World". The end with method asks whether or not
+# The string variable in question "Hello World" ends with "rld" Because it does, we get the return value True.
 
 "Hello World".end_with?("rld")
 
+# The even? method calls on the integer 12 and asks wthether or not the integer, 12, is even. Since it is
+# eve, we get the return value "true". 
 
 12.even?
 
+# The next method calls on the integer 18 and gives us the next whole number after 18 is which gives us the return
+# value of 19. 
 
 18.next
 
