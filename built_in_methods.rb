@@ -50,7 +50,19 @@
 first_name = "Jeff"
 puts first_name.start_with?("J")
 
+# The ends_with? method is called on the dog_name variable which stores the string object "Duke".
+# We should get the return output false in this instance becaue Duke does not end with "z"
+# The puts command prints the return value "false" to the console. 
 
+dog_name = "Duke"
+puts dog_name.end_with?("z")
+
+# The swapcase method is called on the my_name variable which stores the object "Dylan"
+# We should expect the return value to be "dYLAN" because the swapcase method reverses the casing in the stored variable.
+# The puts command prents the return valye "dYLAN" to the console.
+
+my_name = "Dylan"
+puts my_name.swapcase
 
 # SECTION 3: Calling methods on variables assigned to integers.
 # Declare 2 variables assigned to integer objects.
@@ -58,10 +70,31 @@ puts first_name.start_with?("J")
 # https://ruby-doc.org/core-3.1.0/Integer.html
 # Include comments above each method call explaining the impact and return value of that method.
 
+# The .gcd method calls on the integer 18 to see what the greatest common divisor between it and the number 72 is
+# the output in an irb session is 18 as the greatest common divisor.
 
+18.gcd(72)
+
+# The .lcm method calls on the integer 16 to see what the least common multiple between it and the number 49 is.
+# the output in an irb session is 784 as the least common multiple.
+
+16.lcm(64)
 
 # SECTION 4: Calling methods on variables assigned to arrays.
 # Declare 2 variables assigned to arrays.
 # Call a different built-in Ruby method on each of your variables. 
 # https://ruby-doc.org/core-3.1.0/Array.html
 # Include comments above each method call explaining the impact and return value of that method.
+
+# The .last method calls on the array [1, 3, 6, 7, 8,] to see which integer withing the array is last in squential order.
+# Since the integer 8 is the last listed the output in the console is "8".
+
+numbers = [1, 3, 6, 7, 8,]
+puts numbers.last
+
+# The .rotate method calles on the array [1917, 1476, 1993, 2001, 1111] and rotates the given integers
+# from one end of the array to the other. The output rerads in the console as [1476, 1993, 2001, 654, 1111, 1917]
+
+years = [1917, 1476, 1993, 2001, 654, 1111]
+puts years.rotate
+
